@@ -14,4 +14,11 @@ public class ListaEstudiantesArbol extends TreeSet<Estudiante> {
             it.next().accept(v);
         }
     }
+
+    public void recorrerInverso(Visitor v) {
+        Iterator<Estudiante> it = this.descendingIterator();
+        while (it.hasNext()) {
+            it.next().accept(v);
+        }
+    }
 }
