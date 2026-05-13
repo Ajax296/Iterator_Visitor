@@ -12,7 +12,8 @@ public class VisitorArray implements Visitor {
         if (!e.datosCompletos()) {
             System.out.println("[ARRAY] NOTIFICACIÓN - Estudiante incompleto: " + e.getNombre());
         } else {
-            System.out.println("[ARRAY] Estudiante OK: " + e.getCodigo() + " - " + e.getNombre());
+            System.out.println("[ARRAY] Estudiante | Código: " + e.getCodigo()
+                    + " | Nombre: " + e.getNombre());
         }
     }
 
@@ -23,7 +24,8 @@ public class VisitorArray implements Visitor {
             System.out.println("[ARRAY] NOTIFICACIÓN - Docente incompleto: " + d.getNombre()
                     + " | Código: " + codigoNotificacion);
         } else {
-            System.out.println("[ARRAY] Docente OK: " + d.getCodigo() + " - " + d.getNombre());
+            System.out.println("[ARRAY] Docente | Código: " + d.getCodigo()
+                    + " | Nombre: " + d.getNombre());
         }
     }
 }

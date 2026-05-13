@@ -12,7 +12,10 @@ public class VisitorArbol implements Visitor {
         if (!e.datosCompletos()) {
             System.out.println("[ARBOL] NOTIFICACIÓN - Estudiante incompleto: " + e.getNombre());
         } else {
-            System.out.println("[ARBOL] Estudiante OK: " + e.getCodigo() + " - " + e.getNombre());
+            System.out.println("[ARBOL] Estudiante | Código: " + e.getCodigo()
+                    + " | Nombre: " + e.getNombre()
+                    + " | Dirección: " + e.getDireccion()
+                    + " | Teléfonos: " + e.getTelefono());
         }
     }
 
@@ -23,7 +26,10 @@ public class VisitorArbol implements Visitor {
             System.out.println("[ARBOL] NOTIFICACIÓN - Docente incompleto: " + d.getNombre()
                     + " | Código: " + codigoNotificacion);
         } else {
-            System.out.println("[ARBOL] Docente OK: " + d.getCodigo() + " - " + d.getNombre());
+            System.out.println("[ARBOL] Docente | Código: " + d.getCodigo()
+                    + " | Nombre: " + d.getNombre()
+                    + " | Dirección: " + d.getDireccion()
+                    + " | Teléfonos: " + d.getTelefono());
         }
     }
 }
